@@ -65,7 +65,7 @@ define $(PKG)_POST_BUILD
     [ -d '$(dir $(CMAKE_TOOLCHAIN_FILE))' ] || mkdir -p '$(dir $(CMAKE_TOOLCHAIN_FILE))'
     (echo 'set(CMAKE_SYSTEM_NAME Windows)'; \
      echo 'set(MSYS 1)'; \
-     echo 'set(BUILD_SHARED_LIBS OFF)'; \
+     echo 'set(BUILD_SHARED_LIBS ON)'; \
      echo 'set(CMAKE_BUILD_TYPE Release)'; \
      echo 'set(CMAKE_FIND_ROOT_PATH $(PREFIX)/$(TARGET))'; \
      echo 'set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)'; \
