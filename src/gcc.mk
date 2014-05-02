@@ -36,7 +36,7 @@ define $(PKG)_CONFIGURE
         --build="`config.guess`" \
         --prefix='$(PREFIX)' \
         --libdir='$(PREFIX)/lib' \
-        --enable-languages='c,c++,objc,fortran' \
+        --enable-languages='c,c++' \
         --enable-version-specific-runtime-libs \
         --with-gcc \
         --with-gnu-ld \
